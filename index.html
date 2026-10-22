@@ -6,11 +6,11 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Projekt ogrzewania podłogowego - cena od razu | Projekt-Ogrzewania.pl</title>
 <meta name="description" content="Indywidualny projekt ogrzewania podłogowego z obliczeniami OZC i hydrauliką. Cena znana od razu: od 400 zł, ekspres 48 h, realizacja zdalnie z całej Polski.">
-<meta name="theme-color" content="#f3f1ec">
+<meta name="theme-color" content="#f4f2ed">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@90..100,500..750&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/rzut-petli.webp">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -44,19 +44,21 @@
 
 <main>
 <section class="hero">
-  <figure class="hero-foto">
-    <img src="img/rzut-petli.webp" alt="Rzut pętli ogrzewania podłogowego z przykładowego projektu: pętle zasilania i powrotu, moc i temperatura każdego pomieszczenia" width="1116" height="792" fetchpriority="high">
-    <figcaption>Fragment rzutu pętli z przykładowego projektu, skala 1:50</figcaption>
-  </figure>
+  <div class="hero-foto">
+    <figure class="arkusz">
+      <img src="img/rzut-petli.webp" alt="Rzut pętli ogrzewania podłogowego z przykładowego projektu: pętle zasilania i powrotu, moc i temperatura każdego pomieszczenia" width="1116" height="792" fetchpriority="high">
+      <figcaption><span><b>Rzut pętli</b> z przykładowego projektu</span><span>skala 1:50</span></figcaption>
+    </figure>
+  </div>
   <div class="wrap hero-in">
     <div class="hero-txt">
       <h1>Projekt ogrzewania podłogowego policzony pod Twój dom</h1>
-      <p class="lead">Obliczenia OZC i hydrauliki, rzut pętli, nastawy rozdzielaczy i lista materiałów w jednym PDF. Robimy to zdalnie dla całej Polski, a cenę znasz od razu: <b>od 400 zł</b>, w ekspresie 48 h.</p>
+      <p class="lead">Obliczenia OZC i hydrauliki, rzut pętli, nastawy rozdzielaczy i lista materiałów w jednym PDF. Zdalnie dla całej Polski, cena znana od razu: <b>od&nbsp;400&nbsp;zł</b>, ekspres w 48 h.</p>
       <div class="hero-cta">
-        <a class="btn btn-g" href="#wycena">Sprawdź cenę dla swojego domu</a>
+        <a class="btn btn-g" href="#wycena">Sprawdź cenę dla swojego domu<svg class="str" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="link" href="https://projekt-ogrzewania.pl/wp-content/uploads/2026/03/Przykladowy-projekt-ogrzewania-podlogowego-zestawienie.pdf" target="_blank" rel="noopener">Przykładowy projekt (PDF)</a>
       </div>
-      <p class="hero-zd">Ponad 1000 projektów i analiz OZC, średnia ocena 4,96/5 z 25 opinii. Kupując materiały z naszej wyceny, odzyskujesz do 100% ceny projektu.</p>
+      <p class="hero-zd">Ponad 1000 projektów i analiz OZC, ocena <b>4,96/5</b> z 25 opinii. Kupując materiały z naszej wyceny, odzyskujesz do 100% ceny projektu.</p>
     </div>
   </div>
 </section>
@@ -65,7 +67,7 @@
   <div class="wrap">
     <div class="glowa">
       <h2>Ile kosztuje projekt dla Twojego domu?</h2>
-      <p>Zaznacz kilka parametrów budynku. Kwota pochodzi wprost z cennika sklepu projekt-ogrzewania.pl, bez ukrytych dopłat. Podsumowanie możesz wysłać projektantowi jednym kliknięciem.</p>
+      <p>Zaznacz parametry budynku. Kwota pochodzi wprost z cennika sklepu, a podsumowanie wyślesz projektantowi jednym kliknięciem.</p>
     </div>
 
     <div class="kreator">
@@ -141,7 +143,11 @@
       </form>
 
       <aside class="tabliczka" id="wynik" aria-live="polite">
-        <div class="tb-head"><span>Wycena projektu</span><span id="tbNr">PO-2026</span></div>
+        <div class="tb-head">Cena projektu</div>
+        <div class="tb-cena">
+          <strong id="cena">-</strong>
+          <small id="cenaOpis">brutto, z cennika sklepu</small>
+        </div>
         <dl class="tb-dane">
           <div><dt>Inwestycja</dt><dd id="dTyp">-</dd></div>
           <div><dt>Kondygnacje</dt><dd id="dKond">-</dd></div>
@@ -150,11 +156,6 @@
           <div><dt>Etap</dt><dd id="dEtap">-</dd></div>
           <div><dt>Termin</dt><dd id="dCzas">-</dd></div>
         </dl>
-        <div class="tb-cena">
-          <span>Cena projektu</span>
-          <strong id="cena">-</strong>
-          <small id="cenaOpis">brutto, z cennika sklepu</small>
-        </div>
         <p class="tb-odl" id="odl"></p>
         <ul class="tb-uwagi" id="uwagi"></ul>
         <details class="tb-lista">
@@ -180,7 +181,7 @@
   <div class="wrap">
     <div class="glowa">
       <h2>To nie jest sam rysunek pętli</h2>
-      <p>Instalator dostaje konkretne dane zamiast ogólnych zaleceń. Poniżej fragmenty prawdziwego, 14-stronicowego projektu przykładowego.</p>
+      <p>Instalator dostaje konkretne dane zamiast ogólnych zaleceń. Poniżej fragmenty 14-stronicowego projektu przykładowego.</p>
     </div>
 
     <figure class="rys rys-duzy">
@@ -238,8 +239,7 @@
         <li><b>Odbierasz projekt w PDF.</b> Standardowo ok. 7 dni roboczych od kompletu danych, w ekspresie 48 h.</li>
       </ol>
       <h3>Po co projekt, skoro instalator „zrobi z doświadczenia”?</h3>
-      <p>Przy instalacji według projektu rozstaw rur wynika z obliczonego obciążenia pomieszczenia, długości obiegów są kontrolowane i możliwe do wyregulowania, a temperatura wody jest dopasowana do podłogi i źródła ciepła. Instalator dostaje jednoznaczne parametry.</p>
-      <p>Układanie „na oko” kończy się zwykle tym, że jedne pokoje są przegrzane, a inne niedogrzane, pętle wychodzą za długie, zasilanie trzeba podnosić, a poprawki po wylaniu posadzki są kosztowne.</p>
+      <p>W projekcie rozstaw rur wynika z obliczonego obciążenia pomieszczenia, a temperatura wody z podłogi i źródła ciepła. Układanie „na oko” kończy się zwykle przegrzanymi i niedogrzanymi pokojami, za długimi pętlami i wyższym zasilaniem, a poprawki po wylaniu posadzki są kosztowne.</p>
     </div>
   </div>
 </section>
@@ -265,7 +265,7 @@
   <div class="wrap">
     <div class="glowa">
       <h2>Co piszą inwestorzy i instalatorzy</h2>
-      <p>Średnia ocena 4,96 na 5 z 25 opinii w sklepie. Kilka z nich:</p>
+      <p class="ocena"><span class="gw" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg></span><span>Średnia <b>4,96 na 5</b> z 25 opinii w sklepie</span></p>
     </div>
     <div class="cytaty">
       <blockquote><p>„Dostałem dokładne rozstawy, długości pętli i zestawienie materiałów. Dużo łatwiej było dzięki temu zaplanować całą instalację.”</p><cite>Anatol Franczak, 12.08.2026</cite></blockquote>

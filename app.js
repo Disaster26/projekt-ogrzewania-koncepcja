@@ -41,6 +41,9 @@ const CENNIK={"piwnica-parter-pietro-poddasze":{"std":{"500":1300,"450":1350,"40
     $('#dEtap').textContent=NAZWY.etap[st.etap];
     $('#dCzas').textContent=NAZWY.czas[st.czas];
     const el=$('#cena');
+    const rr=$('#pow');rr.style.setProperty('--p',((+rr.value-rr.min)/(rr.max-rr.min)*100)+'%');
+    const nowa=c?zl(c.kw):'Wycena indywidualna';
+    if(el.textContent!=='-'&&el.textContent!==nowa){el.classList.remove('mig');void el.offsetWidth;el.classList.add('mig')}
     if(c){
       el.textContent=zl(c.kw);el.classList.remove('ind');
       $('#cenaOpis').textContent='brutto, z cennika sklepu'+(c.podniesiony?' (najmniejszy wariant dla tylu kondygnacji: do '+c.p+' m²)':'');
